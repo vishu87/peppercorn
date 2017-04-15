@@ -1,0 +1,112 @@
+@media screen and (max-width:768px) {
+
+	header {
+		.logo {
+			padding: 20px 0;
+			img {
+				max-width: 100%;
+			}
+		}
+		.header-menu ul li {
+			font-size: 20px;
+			margin-right: 18px;
+		}
+	}
+	.home-title {
+		margin-bottom: 0;
+		h2 {
+			font-size: 25px;
+			margin-bottom: 0;
+		}
+	}
+	h1.sec-title {
+		font-size: 30px;
+		margin-top: 0;
+	}
+	.home-address {
+		text-align: center;
+		.right {
+			text-align: center;
+		}
+		.mid {
+			display: none;
+		}
+		&.separator-div {
+			margin: 0;
+		}
+	}
+	.separator-div img {
+		/*width: 60px;*/
+	}
+	.home-about {
+		padding-bottom: 0;
+		text-align: center;
+		.left h1 {
+			margin-bottom: 0;
+			padding-right: 0;
+		}
+		.right img {
+			max-width: 100%;
+		}
+	}
+	.home-regional-treasure {
+		.left,.right {
+			display: none;
+		}
+		.mid {
+			padding: 0;
+		}
+	}
+	.home-gallery {
+		.images img {
+			width: 100%;
+			max-width: 461px;
+		}
+	}
+
+	/* menu.php */
+	.side-menu {
+		display: none;
+	}
+	.menu-page {
+		.menu-items {
+			padding: 0;
+		}
+		.menu-sec {
+			padding-top: 0;
+		}
+		.title {
+			font-size: 30px;
+		}
+	}
+
+	/* form css */
+	.reservation-form {
+		padding: 0 15px;
+	}
+
+	footer .footer-back {
+		margin-top: 0;
+		padding: 50px 0;
+		h1.sec-title {
+			margin-top: 0;
+		}
+		.footer-sec {
+			margin-top: 0;
+			margin-bottom: 145px;
+			padding-left: 0;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width:480px) {
+
+	header .logo img {
+		width: 215px;
+	}
+	.home-about .right img {
+		width: 174px;
+	}
+	
+}
