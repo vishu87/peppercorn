@@ -1,8 +1,4 @@
 <?php // Template Name : Menu Page
-// $category = get_the_category();
-// $cat_name = $category[0] ->name;
-// $cat_id = $category[0]->cat_ID;
-
 get_header('inner'); 
 $args = array( 'child_of' => 16, 'order' => 'DESC' ); 
 $categories = get_categories( $args ); 
@@ -12,9 +8,10 @@ $categories = get_categories( $args );
 	<h1 class="sec-title menu-title" data-aos-once="true" data-aos="zoom-in-up">today's menu</h1>
 	<div class="menu-page">
 		<?php 
-			foreach ( $categories as $category ) { 
-			?> 
-				<h1><?php echo $category->name; ?></h1>
+			foreach ( $categories as $category ) {
+			?>
+			<div id="<?php echo $category->cat_ID;?>">
+				<h1 data-aos-once="true" data-aos="zoom-in-up">— <?php echo $category->name; ?> —</h1>
 				<?php
 					$menu_items = new WP_Query(array(
 						"post_type" => "menu_category",
@@ -24,8 +21,8 @@ $categories = get_categories( $args );
 					));
 					if($menu_items->have_posts()):while($menu_items->have_posts()):$menu_items->the_post();
 				?> 			
-					<div class="menu-sec" data-aos-once="true" data-aos="zoom-in-up" id="<?php echo $category->cat_ID;?>" data-aos-once="true">
-						<div class="title">— <?php the_title(); ?> —</div>
+					<div class="menu-sec" data-aos-once="true" data-aos="zoom-in-up" data-aos-once="true">
+						<div class="title"><?php the_title(); ?></div>
 						<div class="menu-items">
 
 							<div>
@@ -47,6 +44,7 @@ $categories = get_categories( $args );
 					</div>
 				<?php endwhile;endif;?>
 			<?php //$count++;?>
+			</div>
 	 	<?php } ?> 
 	</div>
 </div>

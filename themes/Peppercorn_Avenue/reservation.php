@@ -72,7 +72,7 @@
 	$word = $captcha_instance->generate_random_word();
 	$prefix = mt_rand();
 	$img = $captcha_instance->generate_image( $prefix, $word );
-	get_header(); the_post();
+	get_header('inner'); the_post();
 ?>
 
 <div id="form-error" class="location-page home-regional-treasure">

@@ -7,7 +7,6 @@ jQuery(document).ready(function() {
 	    autoPlay : true
 	});
 
-    /* Menu Page Sidebar */
 	jQuery('.side-tab').click(function(){
         // event.preventDefault();
         var target = '#' + jQuery(this).attr("data-target");
@@ -36,63 +35,6 @@ function onScroll(event){
 
 }
 
-/* Location Google Map */
-
-// When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
-
-function init() {
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 15,
-
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(-33.2456227, 151.479481), // New York
-
-        // How you would like to style the map. 
-        // This is where you would paste any style found on Snazzy Maps.
-        styles: [
-            {
-                "featureType": "all",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "invert_lightness": true
-                    },
-                    {
-                        "saturation": -80
-                    },
-                    {
-                        "lightness": 30
-                    },
-                    {
-                        "gamma": 0.5
-                    },
-                    {
-                        "hue": "#3d433a"
-                    }
-                ]
-            }
-        ]
-    };
-
-    // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
-    // var mapElement = document.getElementById('google_map');
-
-    // // Create the Google Map using our element and options defined above
-    // var map = new google.maps.Map(mapElement, mapOptions);
-
-    // // Let's also add a marker while we're at it
-    // var marker = new google.maps.Marker({
-    //     position: new google.maps.LatLng(-33.2456227, 151.479481),
-    //     map: map,
-    //     title: 'Snazzy!'
-    // });
-}
-
 AOS.init({
   duration: 1200
 });
@@ -104,11 +46,6 @@ jQuery( ".datepicker" ).datepicker({
     changeMonth: true,
     changeYear: true
 }); 
-
-//   var old_title = document.title;
-//   	jQuery("#title-menu").click(function(){
-//   		document.title = 'Loading...';
-//   	});
 
 /* Reload Captcha */
 jQuery(document).on('click','.reload-captcha', function(e){
@@ -132,39 +69,3 @@ jQuery(document).on('click','.reload-captcha', function(e){
         jQuery(".reload-captcha").find('.fa-refresh').removeClass('fa-spin');
     });
 });
-
-/* AJAX Data Fetch from Database */
-
-// jQuery(document).on('change','#first', function(e){
-//     e.preventDefault();
-//     if(true){
-//         var btn = jQuery(this);
-//         var data = btn.val();
-//         console.log("running");
-//         if(true){
-//             jQuery.ajax({
-//                 type: "GET",
-//                 url : '../wp-admin/admin-ajax.php?ajax_query=1&name='+data,
-//                 success : function(data){
-//                     data = JSON.parse(data);
-//                     // console.log(data);
-//                     if(data.success){
-//                         var users = data.ajax_rows;
-//                         var str1 = '';
-//                         str1 += '<option value=>Select</option>';
-//                         for (var i = users.length - 1; i >= 0; i--) {
-//                             str1 += '<option value="'+users[i].id+'">'+users[i].value+'</option>';
-//                         };
-//                         // alert(str1);
-//                         jQuery('#second').html(str1);
-//                         jQuery('#third').html(data.extra[0].mobile);
-//                         console.log(data.extra[0].email);
-
-//                     } else {
-//                         alert(data.message);
-//                     }
-//                 }
-//             },"json");
-//         }
-//     }
-// });

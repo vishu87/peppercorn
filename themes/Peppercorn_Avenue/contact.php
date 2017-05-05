@@ -33,13 +33,14 @@
 							"mobile" => $mobile,
 							"message" => $message
 						));
-						$to = 'shubhambhatt52@gmail.com';
+						$to = 'vishu.iitd@gmail.com';
 						$subject = 'Contact Form - Peppercorn Avenue';
 						$message = 'Name: '.$name.'<br>Email: '.$email.'<br>
 							Mobile: '.$mobile.'<br>
 							Message: '.$message;
 
 						$headers = array('Content-Type: text/html; charset=UTF-8');
+						
 						wp_mail( $to, $subject, $message, $headers );
 
 				   	wp_redirect(get_permalink().'?submit=true#success');
@@ -59,7 +60,7 @@
 	$word = $captcha_instance->generate_random_word();
 	$prefix = mt_rand();
 	$img = $captcha_instance->generate_image( $prefix, $word );
-	get_header(); the_post();
+	get_header('inner'); the_post();
 ?>
 
 <div class="location-page home-regional-treasure">
