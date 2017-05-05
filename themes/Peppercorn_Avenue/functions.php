@@ -30,10 +30,11 @@ function theme_css_scripts() {
 	
 	wp_enqueue_style( 'owl-1', get_template_directory_uri() . '/css/owl.carousel.css', array(), '1.0.0', false );
 	wp_enqueue_style( 'owl-2', get_template_directory_uri() . '/css/owl.theme.css', array(), '1.0.0', false );
+	
+	wp_enqueue_style( 'aos_css', get_template_directory_uri().'/css/aos.css',array(),'1.0.1',false );
 
 	wp_enqueue_style('datepicker-css','//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css', array(), '1.0.0', false);
 
-	wp_enqueue_style( 'aos_css', get_template_directory_uri().'/css/aos.css',array(),'1.0.1',false );
 	wp_enqueue_style( 'main_css', get_template_directory_uri().'/main.css',array(),'1.0.1',false );
 	wp_enqueue_style( 'responsive_css', get_template_directory_uri().'/responsive.css',array(),'1.0.1',false );
 

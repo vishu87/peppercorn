@@ -154,25 +154,20 @@
 	</div>
 </div>
 <!-- <div class="container">
-	<select id="first">
+	<select id="first" name="name" ajax_query="1">
 		<option value="">Select</option>
 		<?php
-			//$myrows = $wpdb->get_results( "SELECT * FROM reservations WHERE `date`= '2017-04-27'");
+			//$myrows = $wpdb->get_results( "SELECT * FROM reservations");
 			
 			//foreach ($myrows as $value) {
 			//	echo "<option value='".$value->id."'>".$value->name."</option>";
-			// }
+			//}
 		?>
 	</select>
 	<select id="second">
-		<?php
-			//$ajaxrows = $wpdb->get_results( "SELECT * FROM reservations");
-			//echo json_encode($ajaxrows);
-		?>
 		<option value="">Select</option>
 
 	</select>
-</div -->
-
-
+	<div id="third"></div>
+</div> -->
 <?php get_footer();?>
