@@ -24,6 +24,12 @@ body {
 	font-family: 'veteran_typewriterregular';
 	font-size: 16px;
 }
+
+.container-fluid {
+	padding: 0;
+	overflow: hidden;
+}
+
 a:hover,a:visited,a:focus {
 	text-decoration: none;
 }
@@ -44,7 +50,7 @@ header {
 		li {
 			display: inline-block;
 			font-size: 22px;
-			margin-right: 200px;
+			margin-right: 150px;
 			background: url("img/pink-bullet@2x.png");
 			background-size: 14px;
 			background-position: center left;
@@ -79,7 +85,7 @@ header {
 	}
 	.logo {
 		text-align: center;
-		padding: 100px 0;
+		padding: 60px 0;
 		img {
 			width: 430px;
 			height: auto;

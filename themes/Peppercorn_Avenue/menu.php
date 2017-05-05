@@ -3,7 +3,7 @@
 // $cat_name = $category[0] ->name;
 // $cat_id = $category[0]->cat_ID;
 
-get_header(); 
+get_header('inner'); 
 $args = array( 'child_of' => 16, 'order' => 'DESC' ); 
 $categories = get_categories( $args ); 
 ?>
@@ -11,12 +11,10 @@ $categories = get_categories( $args );
 <div class="container">
 	<h1 class="sec-title menu-title" data-aos-once="true" data-aos="zoom-in-up">today's menu</h1>
 	<div class="menu-page">
-		<div class="date">
-			<?php echo date('l, F j, Y');?>
-		</div>
 		<?php 
 			foreach ( $categories as $category ) { 
 			?> 
+				<h1><?php echo $category->name; ?></h1>
 				<?php
 					$menu_items = new WP_Query(array(
 						"post_type" => "menu_category",
@@ -25,7 +23,7 @@ $categories = get_categories( $args );
 						"category_name" => $category->slug
 					));
 					if($menu_items->have_posts()):while($menu_items->have_posts()):$menu_items->the_post();
-				?>						
+				?> 			
 					<div class="menu-sec" data-aos-once="true" data-aos="zoom-in-up" id="<?php echo $category->cat_ID;?>" data-aos-once="true">
 						<div class="title">— <?php the_title(); ?> —</div>
 						<div class="menu-items">
