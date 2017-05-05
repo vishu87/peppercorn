@@ -132,3 +132,39 @@ jQuery(document).on('click','.reload-captcha', function(e){
         jQuery(".reload-captcha").find('.fa-refresh').removeClass('fa-spin');
     });
 });
+
+/* AJAX Data Fetch from Database */
+
+// jQuery(document).on('change','#first', function(e){
+//     e.preventDefault();
+//     if(true){
+//         var btn = jQuery(this);
+//         var data = btn.val();
+//         console.log("running");
+//         if(true){
+//             jQuery.ajax({
+//                 type: "GET",
+//                 url : '../wp-admin/admin-ajax.php?ajax_query=1&name='+data,
+//                 success : function(data){
+//                     data = JSON.parse(data);
+//                     // console.log(data);
+//                     if(data.success){
+//                         var users = data.ajax_rows;
+//                         var str1 = '';
+//                         str1 += '<option value=>Select</option>';
+//                         for (var i = users.length - 1; i >= 0; i--) {
+//                             str1 += '<option value="'+users[i].id+'">'+users[i].value+'</option>';
+//                         };
+//                         // alert(str1);
+//                         jQuery('#second').html(str1);
+//                         jQuery('#third').html(data.extra[0].mobile);
+//                         console.log(data.extra[0].email);
+
+//                     } else {
+//                         alert(data.message);
+//                     }
+//                 }
+//             },"json");
+//         }
+//     }
+// });
