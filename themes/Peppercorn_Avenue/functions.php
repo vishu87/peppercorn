@@ -83,7 +83,12 @@ class Peppercorn{
         if(SHUBHAM){
             $img_base = 'http://localhost/Avyay_Technologies/Wordpress_Custom/Peppercorn_Avenue_Wordpress/wp-content/themes/Peppercorn_Avenue/img';
         } else {
-            $img_base = '/peppercorn/wp-content/themes/Peppercorn_Avenue/img';
+        	if(VASHI){
+        		$img_base = '/peppercorn/wp-content/themes/Peppercorn_Avenue/img';	
+        	} else {
+        		$img_base = '/wp-content/themes/Peppercorn_Avenue/img';
+        	}
+            
         }
 
         $src = $img_base . '/' . $src;
