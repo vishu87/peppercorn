@@ -27,9 +27,8 @@ get_header(); ?>
 				<div class="col-md-4">
 					<div class="right" data-aos="zoom-in-down" data-aos-once="true">
 						<p>
-							Tuesday – Thursday 5:30 – 10:00 PM<br>
-							Friday – Saturday 5:30– 11:00 PM<br>
-							Sunday 5:00 – 10:00 PM
+							Open Everyday From<br>
+							11:00 A.M – 11:00 P.M
 						</p>
 					</div>
 				</div>
