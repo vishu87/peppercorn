@@ -97,4 +97,7 @@ class Peppercorn{
     }
 }
 
+include('inc/theme_options.php');
+
+
 ?>

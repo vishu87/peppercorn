@@ -28,15 +28,15 @@
 						<div class="third" data-aos="slide-up" data-aos-once="true">
 							<ul>
 								<li>
-									<a href="https://www.facebook.com/peppercorn.ave">
+									<a href="<?php echo get_option('facebook_url') ?>">
 								Facebook</a>
 							</li>
 								<li>
-									<a href=" https://www.instagram.com/peppercorn.ave/">
+									<a href="<?php echo get_option('instagram_url') ?>">
 								Instagram</a>
 							</li>
 								<li>
-									<a href="javascript:;">
+									<a href="<?php echo get_option('twitter_url') ?>">
 								Twitter</a>
 							</li>
 								<li>1-202-450-1015</li>
@@ -54,6 +54,9 @@
 							</ul>
 						</div>
 					</div>
+				</div>
+				<div class="designed-by">
+					Website Designed and Developed by <a href="http://www.naijagosocial.com/">Naija Go Social</a> 
 				</div>
 			</div>
 		</div>

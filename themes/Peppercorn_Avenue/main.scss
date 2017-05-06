@@ -213,6 +213,7 @@ h1.sec-title {
 	text-align: center;
 	h1 {
 		font-size: 50px;
+		margin-top: 20px;
 		text-transform: uppercase;
 	}
 	.date {
@@ -279,8 +280,14 @@ h1.sec-title {
 				    left: 0;
 				    bottom: -5px;
 				    background: url(img/dotted-line.png) repeat-x 0px bottom;
-				    animation: cta-hover 10s linear infinite;
-				    webkit-transition: cta-hover 10s linear infinite;
+            transform: rotate(-0.25deg);
+            transition: 0.25s cubic-bezier(0.28, 0, 0.18, 1);
+				    animation: side-tab-hover 10s linear infinite;
+				    webkit-transition: side-tab-hover 10s linear infinite;
+		        -webkit-animation-play-state:running;    
+       			-moz-animation-play-state: running;
+         		-o-animation-play-state: running;
+            animation-play-state:running;
 					}
 				}
 			}
