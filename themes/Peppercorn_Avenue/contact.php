@@ -64,7 +64,9 @@
 ?>
 
 <div class="location-page home-regional-treasure">
-	<h1 id="form-error" class="sec-title menu-title" data-aos="zoom-in-up" data-aos-once="true">Contact Us</h1>
+	<div class="container menu-title">
+		<h1 id="form-error" class="sec-title" data-aos="zoom-in-up" data-aos-once="true">Feel free to call us on 0808 972 7313 <br>or you can fill the form below:</h1>
+	</div>
 	<div class="row mar-0">
 		<div class="col-md-3 padd-0" data-aos="slide-left" data-aos-once="true">
 			<div class="left">
@@ -85,7 +87,7 @@
 				<?php else: ?>
 					<form method="POST" action="#form-error" class="check-form">
 						<div class="form-elem">
-							<label>Name<span class="red-asterik">*</span></label>
+							<label>Your Name<span class="red-asterik">*</span></label>
 							<input type="text" name="full_name" value="<?php echo ($_POST["full_name"])?esc_attr($_POST["full_name"]):'' ?>" required="true">
 						</div>
 						<div class="form-elem">

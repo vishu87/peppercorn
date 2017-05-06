@@ -15,24 +15,24 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<div class="second" data-aos="slide-up" data-aos-once="true">
 							<ul>
-								<li>Tuesday – Thursday 5:30 – 10:00 PM</li>
-								<li>Friday – Saturday 5:30– 11:00 PM</li>
-								<li>Sunday 5:00 – 10:00 PM</li>
+								<li>Open Everyday From<br> 11:00 A.M – 11:00 P.M</li>
+								<!-- <li>Friday – Saturday 5:30– 11:00 PM</li>
+								<li>Sunday 5:00 – 10:00 PM</li> -->
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-3">
 						<div class="third" data-aos="slide-up" data-aos-once="true">
 							<ul>
 								<li>
-									<a href="javascript:;">
+									<a href="https://www.facebook.com/peppercorn.ave">
 								Facebook</a>
 							</li>
 								<li>
-									<a href="javascript:;">
+									<a href=" https://www.instagram.com/peppercorn.ave/">
 								Instagram</a>
 							</li>
 								<li>

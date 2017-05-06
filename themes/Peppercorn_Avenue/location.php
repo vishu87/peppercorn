@@ -2,7 +2,7 @@
 get_header('inner');?>
         
 <div class="container">
-	<h1 class="sec-title menu-title" data-aos="zoom-in-up" data-aos-once="true">Our Location</h1>
+	<h1 class="sec-title menu-title" data-aos="zoom-in-up" data-aos-once="true">Located in Lekki, very close to First Roundabout</h1>
 	<div class="location-page" data-aos="slide-up" data-aos-once="true">
 		<div class="map" id="google_map"></div>
 	</div>

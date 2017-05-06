@@ -7,6 +7,20 @@ jQuery(document).ready(function() {
 	    autoPlay : true
 	});
 
+    /*------------- Top Fixed Menu  ------------------*/
+
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() >= jQuery('footer').offset().top-200) {
+            jQuery('.side-menu').css({
+                "transform": "translate(-230px,0)"
+             });
+        }else {
+            jQuery('.side-menu').css({
+                "transform": "translate(0,0)"
+            });
+        }
+    });
+
 	jQuery('.side-tab').click(function(){
         // event.preventDefault();
         var target = '#' + jQuery(this).attr("data-target");

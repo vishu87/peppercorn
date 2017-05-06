@@ -19,9 +19,9 @@
 				$date = isset($_POST["date"])?esc_attr(date('Y-m-d',strtotime($_POST["date"]))):'';
 				$time = isset($_POST["time"])?esc_attr($_POST["time"]):'';
 
-				$message = isset($_POST["message"])?esc_attr($_POST["message"]):'';
+				$guests_no = isset($_POST["guests_no"])?esc_attr($_POST["guests_no"]):'';
 
-				if($name && $email && $mobile && $message){
+				if($name && $email && $mobile && $guests_no){
 
 					$check_preg = true;
 					
@@ -38,10 +38,10 @@
 							"mobile" => $mobile,
 							"date" => $date,
 							"time" => $time,
-							"message" => $message
+							"guests_no" => $guests_no
 						));
 						
-						$to = 'shubhambhatt52@gmail.com';
+						$to = 'contact@peppercornavenue.com';
 						$subject = 'Reservation - Peppercorn Avenue';
 						$message = '
 							<b>Name: </b>'.$name.'<br>
@@ -49,7 +49,7 @@
 							<b>Mobile: </b>'.$mobile.'<br>
 							<b>Reservation Date: </b>'.$date.'<br>
 							<b>Reservation Time: </b>'.$time.'<br>
-							<b>Message: </b>'.$message;
+							<b>No. of Guests: </b>'.$guests_no;
 
 						$headers = ('Content-Type: text/html; charset=UTF-8');
 						
@@ -76,7 +76,9 @@
 ?>
 
 <div id="form-error" class="location-page home-regional-treasure">
-	<h1 id="success" class="sec-title menu-title" data-aos="zoom-in-up" data-aos-once="true">Reserve Your Seats Now</h1>
+	<div class="container menu-title">
+		<h1 id="success" class="sec-title" data-aos="zoom-in-up" data-aos-once="true">Make your Reservation <br>by filling this form below</h1>
+	</div>
 	<div class="row mar-0">
 		<div class="col-md-3 padd-0" data-aos="slide-left" data-aos-once="true">
 			<div class="left">
@@ -123,8 +125,8 @@
 							</div>
 						</div>
 						<div class="form-elem">
-							<label>Message</label>
-							<textarea name="message" value="<?php echo ($_POST["message"])?esc_attr($_POST["message"]):'' ?>"><?php echo ($_POST["message"])?esc_attr($_POST["message"]):'' ?></textarea>
+							<label>Number of Guests Expected<span class="red-asterik">*</span></label>
+							<input type="number" name="guests_no" value="<?php echo ($_POST["guests_no"])?esc_attr($_POST["guests_no"]):'' ?>" required="true">
 						</div>
 						<div class="form-elem">
 							<label>Please fill the text shown in image below</label>

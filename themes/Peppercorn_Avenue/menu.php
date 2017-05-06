@@ -5,7 +5,7 @@ $categories = get_categories( $args );
 ?>
 
 <div class="container">
-	<h1 class="sec-title menu-title" data-aos-once="true" data-aos="zoom-in-up">today's menu</h1>
+	<!-- <h1 class="sec-title menu-title" data-aos-once="true" data-aos="zoom-in-up">today's menu</h1> -->
 	<div class="menu-page">
 		<?php 
 			foreach ( $categories as $category ) {
@@ -34,8 +34,8 @@ $categories = get_categories( $args );
 										foreach ($menus as $menu_item) { ?>
 											<div>
 												<b><?php echo $menu_item["item_name"];?></b>
-												<?php echo $menu_item["item_description"];?>
-												<b>- $ <?php echo $menu_item["item_price"];?></b>
+												<?php //echo $menu_item["item_description"];?>
+												- &#8358; <?php echo $menu_item["item_price"];?>
 											</div>
 										<?php } ?>
 								<?php endif;?>
