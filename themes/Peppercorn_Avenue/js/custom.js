@@ -1,5 +1,13 @@
 jQuery(document).ready(function() {
 
+    /* -------- Mobile Menu ---------*/
+    jQuery("#menu-icon a").click(function(){
+        jQuery("#menu-icon a img").toggle();
+        jQuery(".header-menu ul").slideToggle();
+    });
+
+
+    /* Gallery Images */
 	jQuery(".home-gallery .images").owlCarousel({
 	    items : 1,
 	    singleItem : true,

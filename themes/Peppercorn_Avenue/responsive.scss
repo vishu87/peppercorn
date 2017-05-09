@@ -1,17 +1,40 @@
 @media screen and (max-width:768px) {
 
 	header {
-		.logo {
-			padding: 20px 0;
-			img {
-				max-width: 100%;
+		.mobile-menu {
+			display: block;
+			margin-bottom: 30px;
+			.logo {
+				padding: 0;
+				text-align: left;
+				img {
+					width: 215px;
+				}
+			}
+			#menu-icon {
+				text-align: right;
+				padding-top: 40px;
+			}
+			.header-menu {
+				padding-top: 20px;
+				ul {
+					display: none;
+					padding-left: 0;
+					li {
+						display: block;
+						text-align: center;
+						margin-right: 0;
+						padding-left: 0;
+						background: none;
+					}
+				}
 			}
 		}
-		.header-menu ul li {
-			font-size: 20px;
-			margin-right: 18px;
-		}
 	}
+	.main-menu {
+		display: none;
+	}
+
 	.home-title {
 		margin-bottom: 0;
 		h2 {
@@ -105,11 +128,16 @@
 
 @media screen and (max-width:480px) {
 
-	header .logo img {
-		width: 215px;
-	}
 	.home-about .right img {
-		width: 174px;
+		width: 175px;
+	}
+	
+}
+
+@media screen and (max-width:1024px) {
+
+	header .header-menu ul li {
+		margin-right: 100px;
 	}
 	
 }
