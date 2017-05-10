@@ -14,8 +14,8 @@ get_header(); ?>
 					<div class="left" data-aos="zoom-in-down" data-aos-once="true">
 						<p>
 							Peppercorn Avenue<br>
-							6A, Otunba Adedoyin Ogunge Street,<br>
-							Off. Admiralty Way, Phase I, Lekki, Lagos - 105102 
+							6A, Otunba Adedoyin Ogungbe Crescent,<br>
+							Off. Admiralty Way, Phase 1, Lekki, Lagos - 105102 
 						</p>
 					</div>
 				</div>
@@ -28,7 +28,7 @@ get_header(); ?>
 					<div class="right" data-aos="zoom-in-down" data-aos-once="true">
 						<p>
 							Open Everyday From<br>
-							11:00 A.M – 11:00 P.M
+							12:30 – 23:00
 						</p>
 					</div>
 				</div>

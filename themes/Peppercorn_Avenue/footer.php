@@ -5,7 +5,7 @@
 		<h1 class="sec-title">Join Us</h1>
 			<div class="footer-sec">
 				<div class="row">
-					<div class="col-md-5">
+					<div class="col-md-4">
 						<div class="first" data-aos="slide-up" data-aos-once="true">
 							<p>
 								Peppercorn Avenue<br>
@@ -28,10 +28,10 @@
 						<div class="third" data-aos="slide-up" data-aos-once="true">
 							<ul>
 								<li>
-									<a href="<?php echo get_option('facebook_url') ?>">Facebook</a>
+									<a href="<?php echo get_option('facebook_url') ?>" target="_blank">Facebook</a>
 								</li>
 								<li>
-									<a href="<?php echo get_option('instagram_url') ?>">Instagram</a>
+									<a href="<?php echo get_option('instagram_url') ?>" target="_blank">Instagram</a>
 								</li>
 							</ul>
 						</div>

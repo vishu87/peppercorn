@@ -51,33 +51,34 @@ header {
 			display: inline-block;
 			font-size: 22px;
 			margin-right: 150px;
+			background: url("img/pink-bullet@2x.png");
+			background-size: 14px;
+			background-position: center left;
+			background-repeat: no-repeat;
+			padding-left: 20px;
 			a {
 				color: $dark_green;
 				padding-bottom: 5px;
+
 			}
 			&.current_page_item {
 				a {
 					background: url("img/dotted-line.png") repeat-x 0px bottom;
 				}
-				background: url("img/pink-bullet@2x.png");
-				background-size: 14px;
-				background-position: center left;
-				background-repeat: no-repeat;
-				padding-left: 20px;
 			}
 			img {
 				width: 8px;
 				height: auto;
 				margin-right: 8px;
 			}
-			&:nth-child(2) a {
+			&:nth-child(2){
 				background: url("img/green-bullet@2x.png");
 				background-size: 14px;
 				background-position: center left;
 				background-repeat: no-repeat;
 				padding-left: 20px;
 			}
-			&:nth-child(3) a {
+			&:nth-child(3){
 				background: url("img/dark-green-bullet@2x.png");
 				background-size: 14px;
 				background-position: center left;
@@ -87,13 +88,11 @@ header {
 
 			&:last-child{
 				margin-right: 0;
-				a {
-					background: url("img/green-bullet@2x.png");
-					background-size: 14px;
-					background-position: center left;
-					background-repeat: no-repeat;
-					margin-right: 0;
-				}
+				background: url("img/dark-green-bullet@2x.png");
+				background-size: 14px;
+				background-position: center left;
+				background-repeat: no-repeat;
+				margin-right: 0;
 			}
 		}
 	}
