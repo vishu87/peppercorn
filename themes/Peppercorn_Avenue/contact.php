@@ -33,7 +33,7 @@
 							"mobile" => $mobile,
 							"message" => $message
 						));
-						$to = 'vishu.iitd@gmail.com';
+						$to = 'contact@peppercornavenue.com';
 						$subject = 'Contact Form - Peppercorn Avenue';
 						$message = 'Name: '.$name.'<br>Email: '.$email.'<br>
 							Mobile: '.$mobile.'<br>

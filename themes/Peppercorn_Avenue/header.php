@@ -13,17 +13,45 @@
 <body>
 <header>
 	<div class="container">
-		<nav class="header-menu" data-aos="fade-down" data-aos-once="true">
-			<?php 
-				$primary_menu = wp_nav_menu(array(
-					'theme_location'=>'primary-menu','echo'=>false));
-			?>
-			<?php echo preg_replace('/\n/', '', $primary_menu) ?>
-		</nav>
-		<div class="logo" data-aos="zoom-in-up" data-aos-once="true">
-			<a href="<?php echo get_home_url();?>">
-				<?php echo Peppercorn::image('logo.png'); ?>
-			</a>
+		<div class="main-menu">
+			<nav class="header-menu" data-aos="fade-down" data-aos-once="true">
+				<?php 
+					$primary_menu = wp_nav_menu(array(
+						'theme_location'=>'primary-menu','echo'=>false));
+				?>
+				<?php echo preg_replace('/\n/', '', $primary_menu) ?>
+			</nav>
+			<div class="logo" data-aos="zoom-in-up" data-aos-once="true">
+				<a href="<?php echo get_home_url();?>">
+					<?php echo Peppercorn::image('logo.png'); ?>
+				</a>
+			</div>
+		</div>
+		<div class="mobile-menu">
+			<div class="row">
+				<div class="col-xs-9">
+					<div class="logo">
+						<a href="<?php echo get_home_url();?>">
+							<?php echo Peppercorn::image("logo.png");?>
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div id="menu-icon">
+						<a href="javascript:;">
+							<img src="<?php echo get_template_directory_uri();?>/img/menu-icon.png">
+							<img src="<?php echo get_template_directory_uri();?>/img/menu-close.png" style="display:none">
+						</a>
+					</div>
+				</div>
+			</div>
+			<nav class="header-menu">
+				<?php 
+					$primary_menu = wp_nav_menu(array(
+						'theme_location'=>'primary-menu','echo'=>false));
+				?>
+				<?php echo preg_replace('/\n/', '', $primary_menu) ?>
+			</nav>
 		</div>
 	</div>
 </header>
