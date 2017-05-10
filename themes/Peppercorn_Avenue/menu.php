@@ -35,7 +35,7 @@ $categories = get_categories( $args );
 											<div>
 												<b><?php echo $menu_item["item_name"];?></b>
 												<?php //echo $menu_item["item_description"];?>
-												- &#8358; <?php echo $menu_item["item_price"];?>
+												<!-- - &#8358; --> <?php //echo $menu_item["item_price"];?>
 											</div>
 										<?php } ?>
 								<?php endif;?>
