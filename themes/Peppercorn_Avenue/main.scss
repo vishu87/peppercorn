@@ -58,6 +58,12 @@ header {
 			padding-left: 20px;
 			a {
 				color: $dark_green;
+				padding-bottom: 5px;
+			}
+			&.current_page_item {
+				a {
+					background: url("img/dotted-line.png") repeat-x 0px bottom;
+				}
 			}
 			img {
 				width: 8px;
@@ -375,6 +381,17 @@ label.error {
 }
 
 /* footer.php */
+
+footer {
+	position: relative;
+	.designed-by {
+		text-align: center;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		z-index: 100;
+	}
+}
 
 .footer-back {
 	background: url(img/footer-back@2x.png);

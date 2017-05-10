@@ -24,42 +24,34 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-2">
 						<div class="third" data-aos="slide-up" data-aos-once="true">
 							<ul>
 								<li>
-									<a href="<?php echo get_option('facebook_url') ?>">
-								Facebook</a>
-							</li>
+									<a href="<?php echo get_option('facebook_url') ?>">Facebook</a>
+								</li>
 								<li>
-									<a href="<?php echo get_option('instagram_url') ?>">
-								Instagram</a>
-							</li>
-								<li>
-									<a href="<?php echo get_option('twitter_url') ?>">
-								Twitter</a>
-							</li>
-								<li>1-202-450-1015</li>
-								<li>General Inquiries</li>
+									<a href="<?php echo get_option('instagram_url') ?>">Instagram</a>
+								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-3">
 						<div class="fourth" data-aos="slide-up" data-aos-once="true">
 							<ul>
-								<li>Employment</li>
-								<li>Press</li>
-								<li>Classic Gift Card</li>
-								<li>eGift Cards</li>
+								<li>Contact Us</li>
+								<li>+234 808 972 7313</li>
+								<li>contact@peppercornavenue.com</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="designed-by">
-					Website Designed and Developed by <a href="http://www.naijagosocial.com/">Naija Go Social</a> 
-				</div>
+				
 			</div>
 		</div>
+	</div>
+	<div class="designed-by">
+		Website Designed and Developed by <a href="http://www.naijagosocial.com/" target="_blank">Naija Go Social</a> 
 	</div>
 </footer>
 <script type="text/javascript">
