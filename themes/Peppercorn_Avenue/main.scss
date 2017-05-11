@@ -394,7 +394,12 @@ footer {
 		width: 100%;
 		position: absolute;
 		bottom: 0;
+		font-weight: 600;
 		z-index: 100;
+		padding: 0 15px;
+		a {
+			display: inline-block;
+		}
 	}
 }
 
@@ -424,7 +429,10 @@ footer {
 		}
 		.second {
 			font-size: 18px;
-			text-align: center;
+			/*text-align: center;*/
+		}
+		.fourth span {
+			font-size: 20px; 
 		}
 	}
 }

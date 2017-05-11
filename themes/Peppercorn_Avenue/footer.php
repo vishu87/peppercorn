@@ -15,7 +15,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-4">
 						<div class="second" data-aos="slide-up" data-aos-once="true">
 							<ul>
 								<li>Open Everyday From<br> 12:30 – 23:00</li>
@@ -24,24 +24,18 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-2">
-						<div class="third" data-aos="slide-up" data-aos-once="true">
+					<div class="col-md-4">
+						<div class="fourth" data-aos="slide-up" data-aos-once="true">
 							<ul>
+								<li><span>Contact Us</span></li>
+								<li>+234 808 972 7313</li>
+								<li>contact@peppercornavenue.com</li>
 								<li>
 									<a href="<?php echo get_option('facebook_url') ?>" target="_blank">Facebook</a>
 								</li>
 								<li>
 									<a href="<?php echo get_option('instagram_url') ?>" target="_blank">Instagram</a>
 								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="fourth" data-aos="slide-up" data-aos-once="true">
-							<ul>
-								<li>Contact Us</li>
-								<li>+234 808 972 7313</li>
-								<li>contact@peppercornavenue.com</li>
 							</ul>
 						</div>
 					</div>
